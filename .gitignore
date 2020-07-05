@@ -1,0 +1,6 @@
+# Archive file
+*.7z
+
+# Ignore directory
+/PuTTY-ranvis/
+/output/
