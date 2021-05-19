@@ -1,4 +1,4 @@
-﻿#define VERSION '0.74'
+﻿#define VERSION '0.75'
 #define COPYRIGHT 'Copyright © 1997-2020 Simon Tatham.'
 
 [Setup]
