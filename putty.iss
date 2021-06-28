@@ -27,6 +27,7 @@ SolidCompression=yes
 UsedUserAreasWarning=no
 UsePreviousLanguage=no
 UsePreviousPrivileges=no
+PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=commandline dialog
 ArchitecturesInstallIn64BitMode=x64
 ArchitecturesAllowed=x64
@@ -48,7 +49,7 @@ Source: PuTTY-ranvis\*.exe; DestDir: {app}; Components: main; Flags: promptifold
 Source: PuTTY-ranvis\putty_sample.ini; DestDir: {app}; Components: main; Flags: ignoreversion
 Source: PuTTY-ranvis\putty.chm; DestDir: {app}; Components: main; Flags: ignoreversion
 Source: PuTTY-ranvis\LICENCE; DestDir: {app}; Components: main; Flags: ignoreversion
-Source: PuTTY-ranvis\README.ranvis-dist; DestDir: {app}; DestName: README.txt; Components: main; Flags: ignoreversion
+Source: PuTTY-ranvis\README.ranvis-dist.txt; DestDir: {app}; DestName: README.txt; Components: main; Flags: ignoreversion
 ; japanese language
 Source: PuTTY-ranvis\lang\0411\*; Excludes: plinkw.lng; DestDir: {app}\lang\0411; Components: lang/ja; Flags: ignoreversion
 
