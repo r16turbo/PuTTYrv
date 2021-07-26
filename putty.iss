@@ -1,18 +1,23 @@
-﻿#define VERSION '0.75'
-#define COPYRIGHT 'Copyright © 1997-2020 Simon Tatham.'
+﻿#define VERSION '0.76'
+#define RELEASE '2021-07-18'
+
+#define RELYEAR Copy(RELEASE,1,4)
+#define RELDATE Copy(RELEASE,6,2) + Copy(RELEASE,9,2)
+#define FILEVER VERSION + '.' + RELYEAR + '.' + RELDATE
+#define COPYRIGHT 'Copyright © 1997-' + RELYEAR + ' Simon Tatham.'
 
 [Setup]
 AppId=PuTTY
 AppName=PuTTY-ranvis
-AppVersion={#VERSION}
+AppVersion={#VERSION} {#RELEASE}
 AppPublisher=SATO Kentaro
 AppPublisherURL=https://www.ranvis.com/putty
 AppSupportURL=https://www.ranvis.com/doc/putty
 VersionInfoCopyright={#COPYRIGHT}
-VersionInfoDescription=PuTTYrv release {#VERSION} installer
+VersionInfoDescription=PuTTYrv release {#VERSION} {#RELEASE} installer
 VersionInfoProductName=PuTTYrv suite
-VersionInfoProductTextVersion=Release {#VERSION}
-VersionInfoVersion={#VERSION}
+VersionInfoProductTextVersion=Release {#VERSION} {#RELEASE}
+VersionInfoVersion={#FILEVER}
 DefaultDirName={autopf}\PuTTY
 DefaultGroupName=PuTTY
 AllowNoIcons=yes
@@ -21,7 +26,7 @@ UninstallDisplayName=PuTTY-ranvis
 UninstallDisplayIcon={app}\putty.exe
 ChangesAssociations=yes
 OutputDir=output
-OutputBaseFilename=PuTTYrv-64bit-{#VERSION}-installer
+OutputBaseFilename=PuTTYrv-64bit-{#VERSION}-{#RELYEAR}{#RELDATE}-installer
 Compression=lzma2/max
 SolidCompression=yes
 UsedUserAreasWarning=no
