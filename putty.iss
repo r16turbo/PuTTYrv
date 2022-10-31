@@ -1,5 +1,5 @@
-﻿#define VERSION '0.77'
-#define RELEASE '2022-06-20'
+﻿#define VERSION '0.78'
+#define RELEASE '2022-10-30'
 
 #define RELYEAR Copy(RELEASE,1,4)
 #define RELDATE Copy(RELEASE,6,2) + Copy(RELEASE,9,2)
