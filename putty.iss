@@ -1,8 +1,9 @@
 ﻿#define VERSION '0.78'
-#define RELEASE '2022-10-31'
+#define RELEASE '2022-10-31b'
 
 #define RELYEAR Copy(RELEASE,1,4)
 #define RELDATE Copy(RELEASE,6,2) + Copy(RELEASE,9,2)
+#define REVISION Copy(RELEASE,11,1)
 #define FILEVER VERSION + '.' + RELYEAR + '.' + RELDATE
 #define COPYRIGHT 'Copyright © 1997-' + RELYEAR + ' Simon Tatham.'
 
@@ -26,7 +27,7 @@ UninstallDisplayName=PuTTY-ranvis
 UninstallDisplayIcon={app}\putty.exe
 ChangesAssociations=yes
 OutputDir=output
-OutputBaseFilename=PuTTYrv-64bit-{#VERSION}-{#RELYEAR}{#RELDATE}-installer
+OutputBaseFilename=PuTTYrv-64bit-{#VERSION}-{#RELYEAR}{#RELDATE}{#REVISION}-installer
 Compression=lzma2/max
 SolidCompression=yes
 UsedUserAreasWarning=no
